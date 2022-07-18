@@ -1,9 +1,7 @@
-import React from 'react'
+import React from "react";
 
-function index() {
-  return (
-    <div>index</div>
-  )
-}
+const DashBoard = () => {
+  return <div>DashBoard</div>;
+};
 
-export default index
+export default DashBoard;

@@ -1,9 +1,7 @@
-import React from 'react'
+import React from "react";
 
-function index() {
-  return (
-    <div>index</div>
-  )
-}
+const AuthLayout = ({ children }: { children: JSX.Element }) => {
+  return <>{children}</>;
+};
 
-export default index
+export default AuthLayout;

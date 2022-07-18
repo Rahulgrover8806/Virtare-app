@@ -1,9 +1,7 @@
-import React from 'react'
+import React from "react";
 
-function index() {
-  return (
-    <div>index</div>
-  )
+function DashBoardLayout({ children }: { children: JSX.Element }) {
+  return <div>{children}</div>;
 }
 
-export default index
+export default DashBoardLayout;

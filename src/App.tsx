@@ -1,26 +1,41 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Suspense } from "react";
+import AuthLayout from "./layout/AuthLayout";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import DashBoardLayout from "./layout/DashBoardLayout";
+import { routes } from "./config/Routes";
+import { IRoute } from "./models/IHeader";
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Router>
+        <Routes>
+          {routes.map((route: IRoute) => {
+            return (
+              <Route
+                path={route.path}
+                element={
+                  route.private ? (
+                    <DashBoardLayout>
+                      <Suspense fallback="">
+                        <route.element />
+                      </Suspense>
+                    </DashBoardLayout>
+                  ) : (
+                    <AuthLayout>
+                      <Suspense fallback="">
+                        <route.element />
+                      </Suspense>
+                    </AuthLayout>
+                  )
+                }
+              />
+            );
+          })}
+        </Routes>
+      </Router>
+    </>
   );
-}
+};
 
 export default App;
