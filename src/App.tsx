@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import DashBoardLayout from "./layout/DashBoardLayout";
 import { routes } from "./config/Routes";
 import { IRoute } from "./models/IHeader";
+import 'antd/dist/antd.css';
 
 const App = () => {
   return (
