@@ -1,0 +1,11 @@
+archive/*
+build/*
+node_modules
+partners
+jmeter.log
+server.pem
+coverage
+node-gsheet-getter
+.DS_Store
+*.idea
+package-lock.json
