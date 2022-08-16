@@ -1,0 +1,42 @@
+.communication-header {
+  font-size: "x-large";
+}
+.call-button {
+  background: #267dff;
+  border-radius: 6px;
+  color: #fff;
+  height: auto;
+  color: #fff;
+  padding: 6px 12px;
+}
+.conversation-button {
+  color: #111;
+  height: auto;
+  border-radius: 6px;
+  background: #d9d9d9;
+  height: auto;
+  padding: 6px 12px;
+  margin-left: 10px;
+}
+.dashboard-btn {
+  background-color: #777;
+  color: #fff;
+  border: none;
+  padding: 6px 16px;
+  display: inline-block;
+}
+.list-btn {
+  color: #000;
+  background: #e0dfdf;
+  border: none;
+  padding: 6px 16px;
+  display: inline-block;
+}
+.communication-btn {
+  display: flex;
+  justify-content: center;
+}
+.content-btn {
+  display: flex;
+  justify-content: end;
+}

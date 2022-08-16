@@ -1,0 +1,13 @@
+.ant-spin.ant-spin-spinning {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #00000078;
+    height: 100vh;
+    z-index: 999;
+}
+.loader.ant-spin-dot {
+    position: absolute;
+    top: 50%;
+}

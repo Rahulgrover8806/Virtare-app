@@ -1,0 +1,229 @@
+.patientDetails {
+  display: flex;
+  justify-content: space-around;
+  cursor: pointer;
+}
+.patientDetails .patientDetailsContent span svg {
+  height: 30px;
+  width: 23px;
+  fill: #fff;
+}
+.patientDetails .patientDetailsContent span {
+  height: 50px;
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 7px;
+}
+
+.patientDetails .patientDetailsContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-width: 150px;
+}
+
+.patientDetails .yellowBgColor span {
+  background-color: #e29e19;
+}
+
+.patientDetails .blueBgColor span {
+  background-color: #267dff;
+}
+
+.patientDetails .green span {
+  background-color: #00897b;
+}
+.patientDetails .vital span {
+  background-color: #880808;
+}
+
+.patientDetails .skyBlueBgColor span {
+  background-color: #8e60ff;
+}
+
+.patientDetails .red span {
+  background-color: red;
+}
+.modal-active-btn {
+  border: 1px solid #eee;
+  background: rgb(137 135 135);
+  color: #fff;
+  padding: 3px 15px;
+  cursor: pointer;
+  font-size: 16px;
+}
+.modal-inactive-btn {
+  border: 1px solid #eee;
+  background: #fff;
+  color: black;
+  padding: 3px 15px;
+  cursor: pointer;
+  font-size: 16px;
+}
+.patient-wrapper {
+  margin-top: 50px;
+  padding-left: 10px;
+  overflow-y: scroll;
+  max-height: 200px;
+}
+.patient-wrapper .ant-timeline {
+  padding: 15px;
+}
+.patient-wrapper .ant-timeline .ant-timeline-item {
+  font-size: 16px;
+}
+.patient-wrapper
+  .ant-timeline
+  .ant-timeline-item
+  .ant-timeline-item-head-custom {
+  font-size: 25px;
+  padding: 8px;
+  border-radius: 50%;
+}
+.patient-wrapper .ant-timeline .ant-timeline-item .ant-timeline-item-content {
+  background: #fff;
+  padding: 13px;
+  margin-left: 59px;
+}
+.timeline-heading {
+  font-weight: bold;
+}
+.time {
+  color: #aaa;
+  margin: 0 0 0 10px;
+}
+.timeline-body {
+  border-bottom: 1px solid #aaaaaa57;
+  padding-bottom: 14px;
+  position: relative;
+}
+.timeline-checkbox {
+  position: absolute;
+  right: 0%;
+}
+.no-data {
+  margin-top: 50px;
+  text-align: center;
+}
+.no-data .ant-col-24 {
+  padding: 10px;
+}
+.no-data .ant-row {
+  background-color: #fff;
+  font-size: large;
+  border-radius: 7px;
+}
+.patient-wrapper .ant-table-thead .ant-table-cell {
+  font-size: 19px;
+  font-weight: 700;
+}
+.patient-wrapper .ant-table-tbody .ant-table-cell {
+  font-size: 17x;
+  font-weight: 600;
+}
+.communication-table .ant-table-thead .ant-table-cell {
+  font-size: 19px;
+  font-weight: 700;
+}
+.communication-table .ant-table-tbody .ant-table-cell {
+  font-size: 17x;
+  font-weight: 600;
+}
+.patient-tabs{
+  margin-top: 29px;
+}
+.details-icon {
+  font-size: X-LARGE;
+}
+
+.add-note .ant-modal-header .ant-modal-title {
+  font-family: poppins-semibold;
+  font-size: 22px;
+  font-weight: 900;
+}
+.add-note .ant-form-item-label > label {
+  font-size: larger;
+  font-weight: bolder;
+}
+.note-data {
+  font-weight: 900;
+}
+.note-data .ant-alert-close-icon .anticon-close {
+  color: #000!important;
+  font-size: 15px;
+}
+.notes-detail .ant-col-5 {
+  color: #aaa;
+  font-size: 16px;
+}
+.notes-detail .ant-col-7 {
+  font-size: 16px;
+  font-weight: 800;
+}
+.notes-detail .ant-row {
+  border-bottom: 1px solid #aaaaaa57;
+  padding: 8px;
+}
+.care-coordinator-modal {
+  padding: 13px;
+}
+.care-coordinator-modal .ant-col-7 {
+  padding: 29px;
+  margin-top: 10px;
+}
+.care-coordinator-modal .ant-col-17 {
+  padding: 40px;
+  font-size: 17px;
+  font-weight: bolder;
+}
+.ant-modal-header .ant-modal-title {
+  font-family: poppins-semibold;
+  font-size: 22px;
+  font-weight: 900;
+}
+.care-coordinator-body {
+  margin-top: 17px;
+}
+.care-coordinator-body .ant-row {
+  border-bottom: 1px solid #aaaaaa57;
+  padding: 8px;
+  font-size: 15px;
+}
+.icon-text {
+  padding-left: 4px;
+}
+.form-footer .ant-col-24 {
+  margin-bottom: 34px;
+}
+.patient-profile .ant-col-8 {
+  padding: 26px;
+}
+.patient-name {
+  font-size: 19px;
+  font-weight: 900;
+}
+.patient-profile .ant-col-16 {
+  font-size: 14px;
+  padding-top: 22px;
+  display: block;
+  flex: 0 0 66.66666667%;
+  max-width: 66.66666667%;
+  font-weight: 700;
+}
+.loader-modal-custom .ant-spin.ant-spin-spinning {
+  height: 100%;
+}
+.ant-modal-wrap.img-crop-modal .ant-btn.ant-btn-default {
+  display: none;
+}
+.ant-modal-wrap.img-crop-modal .ant-modal-footer {
+  text-align: start;
+}
+.pinAlert .ant-alert-success {
+  font-size: 16px;
+  background-color: #FFF;
+  border: 4px solid #64bf7a!important;
+}

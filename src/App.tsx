@@ -3,8 +3,9 @@ import AuthLayout from "./layout/AuthLayout";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import DashBoardLayout from "./layout/DashBoardLayout";
 import { routes } from "./config/Routes";
-import { IRoute } from "./models/IHeader";
+// import { IRoute } from "./models/IHeader";
 import 'antd/dist/antd.css';
+import { IRoute } from "./modals/IHeader";
 
 const App = () => {
   return (

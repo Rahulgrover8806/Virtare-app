@@ -1,0 +1,33 @@
+.excel-export {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: end;
+}
+.export-button {
+  color: #111;
+  height: auto;
+  border-radius: 6px;
+  background: #d9d9d9;
+  height: auto;
+  padding: 6px 12px;
+  margin-left: 10px;
+}
+.svg-icon {
+    font-size: x-large;
+}
+.communication-table .ant-table-thead {
+  font-size: 19px;
+  font-weight: 1000;
+
+}
+.communication-table .ant-table-tbody {
+  font-size: 17x;
+  font-weight: 500;
+}
+.list-modal{
+  padding-left: 4px;
+}
+.index-serch-header{
+  margin-top: 13px;
+}
