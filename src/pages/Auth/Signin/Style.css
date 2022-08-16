@@ -1,0 +1,109 @@
+.loginWrapper {
+    background-color: #f9f9f9;
+}
+
+.loginWrapper .logIn {
+    max-width: 800px;
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: stretch;
+    height: 100vh;
+    justify-content: center;
+    padding: 15px 30px;
+    overflow: auto;
+}
+
+.loginWrapper .logIn .loginInner {
+    align-self: center!important;
+    border-radius: 15px;
+    overflow: hidden;
+    width: 100%;
+}
+
+.loginWrapper .logIn .loginInner .leftWrapper {
+    background-color: #d9d9d9;
+    height: 100%;
+    padding: 15px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #111;
+    position: relative;
+    text-align: left;
+}
+
+.loginWrapper .logIn .loginInner .leftWrapper .logo {
+    text-align: center;
+    margin: 0 0 30px 0;
+}
+
+.loginWrapper .logIn .loginInner .leftWrapper .logo img {
+    max-width: 140px;
+    margin: 0 auto;
+    display: inline-block;
+}
+
+.loginWrapper .logIn .loginInner .leftWrapper .rightImg {
+    position: absolute;
+    right: 0;
+    bottom: 20px;
+    max-width: 50px;
+}
+.loginWrapper .logIn .loginInner .leftWrapper .rightImg {
+    position: absolute;
+    right: 0;
+    bottom: 20px;
+    max-width: 50px;
+}
+
+.loginWrapper .logIn .loginInner .rightWrapper {
+    background-color: #fff;
+    padding: 50px 20px;
+    height: 100%;
+    position: relative;
+}
+
+.loginWrapper .logIn .loginInner .rightWrapper h2 {
+    text-align: left;
+    position: relative;
+    margin: 0 0 45px;
+}
+
+.loginWrapper .logIn .loginInner .rightWrapper h2:before {
+    content: "";
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    transform: translateX(0);
+    height: 2px;
+    background-color: #111;
+    width: 30px;
+}
+
+.loginWrapper .logIn .loginInner .rightWrapper .rightImg {
+    position: absolute;
+    right: 0;
+    top: 20px;
+    max-width: 50px;
+}
+
+.loginWrapper .logIn .loginInner .rightWrapper form .buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.loginWrapper .logIn .loginInner .rightWrapper form .btn {
+    margin: 10px 0 0;
+    height: auto;
+    font-weight: bolder;
+}
+
+.primaryBtn, .secondaryBtn {
+    background-color: #d9d9d9;
+    font-size: 14px;
+    padding: 6px 25px;
+}

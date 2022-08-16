@@ -3,7 +3,7 @@ const routePaths = {
   SIGNIN: `/`,
   SIGNUP: `/signup`,
   RESETPASSWORD: `/resetpassword`,
-  FORGOTPASSWORD: `/forgotpassword`,
+  FORGOTPASSWORD: `/forgotpassword/password`,
   DASHBOARD: `/dashboard`,
 };
 

@@ -1,22 +1,25 @@
-import { Col, Row, Button, Checkbox, Form, Input, notification } from "antd";
-import "./Style.css";
+import { Button, Col, Form, Input, Row } from "antd";
+import React from "react";
+import "../Signin/Style.css";
 import Logo from "../../../assets/Svg/logo.svg";
 import SignupImage from "../../../assets/Svg/download.png";
 import signupRightBg from "../../../assets/Svg/signupRightBg.png";
-import { useState, useEffect } from "react";
 import { API_URLS } from "../../../config/ApiUrls";
 import API from "../../../services/Api.Services";
 
-const SignIn = () => {
+const ForgotPassword = () => {
   const onFinish = (values: any) => {
-    API.post(`${API_URLS.login}`, {
-      email: values.username,
-      password: values.password,
-      deviceType: "web",
-      deviceToken: null,
-    })
+  // const formData = values;
+  // const asString = new URLSearchParams(formData).toString();
+  // console.log("asString",asString);
+
+    console.log(values, "values");
+    let token=localStorage.getItem('token');
+    API.post(`${API_URLS.forgot}`,{'token': token }, {params:{email:values.email}})
       .then((response: any) => {
-        localStorage.setItem("token", response.token);
+        console.log("response", response);
+
+        // localStorage.setItem("token", response.token);
       })
       .finally(() => {});
   };
@@ -45,7 +48,7 @@ const SignIn = () => {
               <Col span={12}>
                 <div className="rightWrapper">
                   <img src={signupRightBg} alt="Image" className="rightImg" />
-                  <h2>Login</h2>
+                  <h2>Forgot Password</h2>
                   <Form
                     name="basic"
                     initialValues={{
@@ -53,9 +56,10 @@ const SignIn = () => {
                     }}
                     onFinish={onFinish}
                     autoComplete="off"
+                    method="post"
                   >
                     <Form.Item
-                      name="username"
+                      name="email"
                       rules={[
                         {
                           required: true,
@@ -63,38 +67,14 @@ const SignIn = () => {
                         },
                       ]}
                     >
-                      <Input
-                        placeholder="Email"
-                        // name="email"
-                        // onChange={userDetails}
-                      />
-                    </Form.Item>
-
-                    <Form.Item
-                      name="password"
-                      rules={[
-                        {
-                          required: true,
-                          message: "Please input your password!",
-                        },
-                      ]}
-                    >
-                      <Input.Password
-                        placeholder="Password"
-                        // name="password"
-                        // onChange={userDetails}
-                      />
+                      <Input placeholder="Email" />
                     </Form.Item>
 
                     <Form.Item>
                       <div className="buttons">
                         <Button type="primary" htmlType="submit">
-                          Login
+                          Send
                         </Button>
-
-                        <a href="#" className="">
-                          Forgot Password ?
-                        </a>
                       </div>
                     </Form.Item>
                   </Form>
@@ -108,4 +88,4 @@ const SignIn = () => {
   );
 };
 
-export default SignIn;
+export default ForgotPassword;

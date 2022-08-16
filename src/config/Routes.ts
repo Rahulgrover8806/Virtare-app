@@ -8,9 +8,9 @@ export const routes: IRoute[] = [
     element: lazy(() => import("../pages/Auth/Signin")),
   },
   {
-    path: `${routePaths.SIGNUP}`,
+    path: `${routePaths.FORGOTPASSWORD}`,
     private: false,
-    element: lazy(() => import("../pages/Auth/Signup")),
+    element: lazy(() => import("../pages/Auth/ForgotPassword/")),
   },
 
   {
